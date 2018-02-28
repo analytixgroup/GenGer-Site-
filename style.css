@@ -1,0 +1,101 @@
+body {
+	font-family: 'Quicksand', sans-serif;
+	margin: 0;
+	background-image: url("memphis-colorful.png");
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.block {
+	width: 40%;
+	height: 50%;
+	margin: 18% 30% 40px;
+}
+
+.logo {
+	width: 265px;
+	margin: auto;
+	overflow: hidden;
+	text-align: center;
+}
+
+.logo img {
+	transform: translateY(-100%);
+	transition: .6s ease-out;
+	height: auto;
+	width: 265px;
+}
+
+.line {
+	width: 265px;
+	margin-top: 17.5px;
+	height: 7.5px;
+	border-radius: 4px;
+	background-color: #ffff33;
+	transition: 7s ease-out;
+	transform: translateX(-100%);
+	justify-content: center;
+}
+
+.logo img.-animated,
+.logo .line.-animated,
+.second-block h1.-animated,
+.socials .social.-animated {
+	transform: translate(0);
+}
+
+.title-more.-visual {
+	opacity: 1;
+}
+
+.second-block {
+	overflow: hidden;
+	transition: .8s ease-out;
+	text-align: center;
+}
+
+.second-block h1 {
+	transform: translateX(100%);
+}
+
+.socials {
+	display: flex;
+	justify-content: center;
+}
+
+.social {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: white;
+	margin: 0 15px;
+	transition: .5s;
+	transform: translateY(100%);
+}
+
+.social img {
+	width: 60px;
+	height: 60px;
+	margin: 10px;
+}
+
+.social img:hover {
+	transform: rotate(10deg);
+}
+
+.title-more {
+	margin: 60px 0 0;
+	text-align: center;
+	font-size: 18px;
+	transition: 7s ease-out;
+	opacity: 0;
+}
+
+.title-more a:hover {
+	border-bottom: 10px solid #ffff33;
+	border-radius: 2px;
+	transition: .5s ease-out;
+}
